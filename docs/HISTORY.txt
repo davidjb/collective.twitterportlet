@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.20 - unreleased
+-----------------
+
+* Remove specific permissions on portlet definition to use Plone's 
+  default view and edit portlet permissions.
+  (David Beitey - @davidjb)
+
 0.10 - 2011-03-19
 -----------------
 
