@@ -6,7 +6,7 @@ version = '0.20'
 setup(name='collective.twitterportlet',
       version=version,
       description="A Twitter portlet for Plone.",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
         "Framework :: Plone",

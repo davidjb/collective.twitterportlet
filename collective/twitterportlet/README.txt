@@ -47,6 +47,20 @@ Now a tweet with a URL followed by a dot:
     >>> expand_tweet(tweet)
     'Check out this <a href="http://www.google.com">http://www.google.com</a>.'
 
+Now a tweet with a HTTPS URL:
+
+    >>> tweet = """Check out this https://t.co/foobar."""
+    >>> expand_tweet(tweet)
+    'Check out this <a href="https://t.co/foobar">https://t.co/foobar</a>.'
+
+Now a tweet with a FTP URL:
+
+    >>> tweet = """Check out this ftp://ftp.example.org/file.zip."""
+    >>> expand_tweet(tweet)
+    'Check out this <a
+href="ftp://ftp.example.org/file.zip">ftp://ftp.example.org/file.zip</a>.'
+
+
 Now a tweet with an email:
 
     >>> tweet = """Mail me username@email.com"""

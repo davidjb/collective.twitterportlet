@@ -22,7 +22,7 @@ TWITTER_URL = 'http://twitter.com/'
 urlsRegexp = re.compile(r"""
     (
     # Protocol
-    http://
+    (?:http|https|ftp)://
     # Alphanumeric, dash, slash or dot
     [A-Za-z0-9\-/?&=#!.]*
     # Don't end with a dot
